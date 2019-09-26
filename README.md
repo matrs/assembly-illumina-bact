@@ -3,7 +3,7 @@
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.6-brightgreen.svg)](https://snakemake.bitbucket.io)
 
 
-This pipeline is designed  to assemble short genomic reads from bacteria produced by illumina sequencers. It's based on the [shovill](https://github.com/tseemann/shovill) pipeline and uses `spades` to generate an assembly and `pilon` to correct it. It automatically computes k-mer sizes to pass to `spades` and then align the original reads to the assembly using `bwa mem`, passing the resulting `bam` file to `pilon`. Furthermore, performs quality control steps using `quast`, `busco` and `multiqc` to summarize general statistics. See the picture of the DAG at the end of this document for more details.
+This pipeline is designed to assemble short genomic reads from bacteria produced by illumina sequencers. It's based on the [shovill](https://github.com/tseemann/shovill) pipeline and uses `spades` to generate an assembly and `pilon` to correct it. It automatically computes k-mer sizes to pass to `spades` and then align the original reads to the assembly using `bwa mem`, passing the resulting `bam` file to `pilon`. Furthermore, performs quality control steps using `quast`, `busco` and `multiqc` to summarize general statistics. See the picture of the DAG at the end of this document for more details.
 ## Authors
 
 * Jose Maturana (@matrs)
