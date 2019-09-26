@@ -71,6 +71,6 @@ The following recipe provides established best practices for running and extendi
 9. Optional: Create a self-contained workflow archive for publication along with the paper (snakemake --archive).
 10. Optional: Delete the local clone/workdir to free space.
 
-### Pipeline directed acyclic graph
+### Pipeline's directed acyclic graph
 
 ![DAG](/dag_rules.svg)
