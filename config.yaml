@@ -1,0 +1,28 @@
+# file_path: "../../reads/SRR292770"
+ref_genome: "../../NC_011748.fna"
+
+
+minkc: 3
+mincov: 25
+
+#kmers
+min_k: 31               # sensible minimum, although prefer higher
+max_k: 127              # maximum for most assemblers
+kmer_read_frac: 0.75    # ensure max kmer below this prop of read length
+kn : 5
+
+min_overlap: 20 # Merging with flash
+min_bq: 3     # for trimming and stats and pilon
+min_mq: 60    # for pilon
+#memory limit
+mem: 8
+#Valid for all the steps: lighter, flash, spades
+ncores: 4
+busco_db: "../../bacteria_odb9" #path to decompressed odv9
+
+params:
+  seqtk: 
+  mash:
+  busco: "--evalue 1e-03"
+  quast:
+  
