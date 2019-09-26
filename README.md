@@ -74,4 +74,4 @@ The following recipe provides established best practices for running and extendi
 
 ### Pipeline's directed acyclic graph
 
-[![DAG](/dag_rules.svg)]
+![DAG](/dag_rules.svg)
